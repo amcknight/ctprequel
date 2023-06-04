@@ -1,0 +1,72 @@
+If you're not animating a large amount of tiles using Level ExAnimation, or if you're not animating any tiles at all, this document is not for you. If you are, see Lunar Magic's help file for instructions and technical documentation.
+
+Each item is categorized by where they are applied, either Global or Level. The number following the name in brackets is the number of frames, 	followed by the details of the ExAnimation.
+
+
+------------------
+Global ExAnimation
+------------------
+
+The destinations for these global animations are the final row of BG3 and will override any graphics loaded into this slot. You can disable these in particular levels by going to: `Level -> Edit Animation Settings` and uncheck "Enable Lunar Magic's global animations" for that level.
+
+ON/OFF Blocks (2)
+-----------------
+Uses alternate ExGraphics: 61
+Slot: 00
+Type: 10 8x8s line
+Frames: 1060,1080
+Destination: 2F0 (BG3)
+
+Swooper Block (2)
+-------------------
+Uses alternate ExGraphics: 61
+Slot: 01
+Type: 4 8x8s line
+Frames: 1048,104C
+Destination: 2E0 (BG3)
+
+Spiny Blocks (2) & Line Guide Ends (2)
+-------------------
+Slot: 02
+Type: 2 8x8s
+Frames: 686,686
+Destination: 96 (FG2)
+
+Sprite Bounce Block (4)
+-----------------------
+Uses alternate ExGraphics: 61
+Slot: 03
+Type: 4 8x8s: 16x16
+Frames: 100C,101C,102C,103C
+Destination: 2E4 (BG3)
+
+Death Spikes (4)
+-------------------
+Uses alternate ExGraphics: 61
+Slot: 04
+Type: 4 8x8s line
+Frames: 1058,1058,105C,105C
+Destination: 2E8 (BG3)
+
+One-Ways, horizontal & vertical (5)
+------------------------
+Uses alternate ExGraphics: 61
+Slot: 05
+Type: 2 8x8s: stacked
+Frames: 1000,1010,1020,1030,1040
+Destination: 2EC (BG3)
+
+
+-----------------
+Level ExAnimation
+-----------------
+
+Spinning throwblock (4)
+-----------------------
+Uses alternate ExGraphics: 61
+Slot: 03
+Type: 4 8x8s: line
+Frames: 1008,1018,1028,1038
+Destination: 06
+ - overrides turn/throw block
+
