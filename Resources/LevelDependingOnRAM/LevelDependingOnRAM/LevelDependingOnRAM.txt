@@ -1,0 +1,37 @@
+**************************
+* Level Depending On RAM *
+* made by Deflaktor      *
+**************************
+
+What is that
+------------
+
+It is roughly the same as Level Depending On Event.
+The level number of an overworld tile changes after a particular RAM address has been set (i.e., it's different than 0). You can freely customize that (see limitations).
+You can use both ASM hacks simultaneously. (If changing the same level in both patches, this one will overwrite the other one).
+
+Limitations
+-----------
+
+- Levels that are on a submap (level 1xx) but change to a level that is on the OW main map (level 0xx) will screw up with the exits inside the level.
+
+- You can only use level 000-024 and 101-13B.
+
+How to edit
+-----------
+
+Just change the list inside the LevelTable.asm file. You can add as many rows as you like.
+
+How to install
+--------------
+
+1) Backup your ROM (as a safety measure).
+
+2) You have to save your Overworld in Lunar Magic at least once for this patch to work.
+
+3) Use asar to insert the LevelDependingOnRAM.asm into your ROM (don't patch LevelTable.asm!!)
+
+Credits
+-------
+
+You dont have to give credit but i appreciate it. Likewise all other ASM hacks I released.
