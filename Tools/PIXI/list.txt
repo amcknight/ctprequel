@@ -1,0 +1,6 @@
+A0 donut_lift.cfg
+A1 npc.json
+A2 gate.json
+A3 telepod_lucca.json
+A4 telepod_taban.json
+A5 telepod_crono_standing.json
